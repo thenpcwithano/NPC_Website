@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Comic+Relief:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Comic Neue", cursive;
+  background-image: url(./images/Background.png);
+    text-shadow: 2px 2px #900000;
+
+}
+
+button {
+  background: linear-gradient(90deg, #ff7a18, #af002d);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  padding: -60px;
+}
+button:hover {
+  color: rgb(196, 196, 196);
+  width: 64px;
+  height: 64px;
+
+}
