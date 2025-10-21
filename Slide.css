@@ -1,0 +1,26 @@
+.move {
+    position: fixed;      /* Fixes the image in the viewport */
+    top: 50%;             /* Move down 50% of the viewport height */
+    left: 50%;            /* Move right 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Center the image perfectly */
+    z-index: 1000;        /* Optional: make sure it stays on top */
+    image-rendering: pixelated;  /* preserves hard edges when scaled */
+    
+
+    animation: move 4s forwards;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+
+
+
+@keyframes move{
+    0%{
+        left: 100%;
+        rotate: 180deg;
+    }
+    100%{
+        left: 60%;
+        
+    }
+}
