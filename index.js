@@ -9,7 +9,10 @@ let messsages = [
     "Kasane teto",
     "didyoudoyourduolingostreak?",
     "print(`hi`) ",
-    "NEver gonna give you up <:)"
+    "NEver gonna give you up <:)",
+    "Don't you wanna battle to win a prize?",
+    "But what is the prize?",
+    "A BFDI"
 ]
 var button = document.getElementById(`btds`)
 var random

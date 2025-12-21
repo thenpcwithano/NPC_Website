@@ -7,7 +7,7 @@
     image-rendering: pixelated;  /* preserves hard edges when scaled */
     
 
-    animation: move 4s forwards;
+    animation: move 2s forwards;
     animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
 }
