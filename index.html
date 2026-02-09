@@ -6,6 +6,8 @@
     <title>NPC_Forever's web</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Slide.css">
+    <link rel="stylesheet" href="popup.css">
+
 
 
 </head>
@@ -19,7 +21,7 @@
     <img src="./images/The yippe jump thingy remastered remix (2).gif" width="240">
     <br>
     I am a small content creator and art and music hobbyist!
-    <p>I normally just goof <img src="images/SEL.png"> playing games or drawing irl or chatting with my friends :D</p>
+    <p>I normally just goof <img src="images/NEWSEL.png"> playing games or drawing irl or chatting with my friends :D</p>
     <p>I'm mid with my music so apologies is some of my music is mid or just downright unlistenable</p>
     <h1>THINGS I ENJOY</h1>
     <p>I really like BFDI, as it is funny and anticipating, for any of yall wondering
@@ -49,10 +51,44 @@
     <br><a href="https://github.com/thenpcwithano/NPC_Website" target="_blank">
         <button>Source code</button>
     </a><br>
+
+    Click here to get a popup with  a random fun fact about me!
+    <br><br><br><button onclick="funfact()">Fun Fact Button</button><br><br><br>
+
+    <dialog data modal>
+        <button onclick="kill()">
+            ...
+        </button>
+    </dialog>
     thats really all i have...<br>though i do have different sublinks!
     <h1><br><br><br><a href="./pages/music/music.html">Music!</a></h1>
     <h1> <a href="./pages/art/art.html">Art!</a></h1>
 
         <script src="index.js"></script>
+        <script>
+                var facts = [
+                "I am british! 🇬🇧 and yes i like tea and scones!",
+                "I have a tennis ball bfdi plushie!!!",
+                "I can barely make FNF mods..",
+                "I have 2 OC's one names caprian D and the other is ball guy..",
+                "I picky eater >:(",
+                "I'm mixed B)",
+                "I... I... can;'t believe it's 2026 now...",
+                "My favourite bfdi character is Tennis Ball!",
+                "I can barely make games!!!1!"
+
+            ];
+            var randomFact = facts[Math.floor(Math.random() * facts.length)];
+            function funfact() {
+                randomFact = facts[Math.floor(Math.random() * facts.length)];
+                document.querySelector("dialog").innerText = randomFact;
+                document.querySelector("dialog").innerHTML += '<br><button onclick="kill()" class="popupButton">Close</button>';
+                document.querySelector("dialog").showModal();
+            }
+            function kill() {
+                document.querySelector("dialog").close();
+            }
+                
+        </script>
 </body>
 </html>
